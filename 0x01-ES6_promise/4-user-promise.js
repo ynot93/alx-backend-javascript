@@ -2,9 +2,9 @@ function signUpUser(firstName, lastName) {
   return Promise((resolve) => {
     resolve({
       firstName,
-      lastName
+      lastName,
     });
-  })
+  });
 }
 
 export default signUpUser;
