@@ -11,7 +11,6 @@ class Car {
     if (typeof color !== 'string') {
       throw new TypeError('Color must be a string');
     }
-    
     this._brand = brand;
     this._motor = motor;
     this._color = color;
