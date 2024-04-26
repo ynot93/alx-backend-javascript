@@ -1,13 +1,13 @@
 export default class Building {
   constructor(sqft) {
-    if (typeof sqft !== 'number') {
-      throw new Error('Sqft must be a number');
-    }
     if (new.target === Building) {
-      throw new TypeError("This is an abstract class");
+      throw new TypeError('Building is an abstract class');
+    }
+    if (typeof sqft !== 'number') {
+      throw new TypeError('Sqft must be a number');
     }
     if (this.evacuationWarningMessage === undefined) {
-      throw Error('Class extending Building must override evacuationWarningMessage');
+      throw new TypeError('Class extending Building must override evacuationWarningMessage');
     }
 
     this._sqft = sqft;
