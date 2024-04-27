@@ -9,4 +9,5 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
         value: result.reason || result.value,
       }))
     ));
+    return results;
 }
