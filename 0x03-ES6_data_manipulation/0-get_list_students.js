@@ -17,6 +17,6 @@ export default function getListStudents() {
     location: 'San Francisco',
   }
 
-  objectsArray.push(student1, student2, student3);
+  students.push(student1, student2, student3);
   return students;
 }
