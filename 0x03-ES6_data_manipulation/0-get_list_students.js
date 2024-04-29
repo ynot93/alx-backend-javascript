@@ -1,22 +1,22 @@
-function getListStudents() {
-  objectsArray = [];
+export default function getListStudents() {
+  const students = [];
 
-  obj1 = {
+  const student1 = {
     id: 1,
     firstName: 'Guillaume',
     location: 'San Francisco',
   }
-  obj2 = {
+  const student2 = {
     id: 2,
     firstName: 'James',
     location: 'Columbia',
   }
-  obj3 = {
+  const student3 = {
     id: 5,
     firstName: 'Serena',
     location: 'San Francisco',
   }
 
-  objectsArray.push(obj1, obj2, obj3);
-  return objectsArray;
+  objectsArray.push(student1, student2, student3);
+  return students;
 }
