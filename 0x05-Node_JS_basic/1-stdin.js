@@ -7,7 +7,7 @@ function handleInput(data) {
 }
 
 if (process.stdin.isTTY) {
-  process.stdin.once('data', handleInput);
+  process.stdin.on('data', handleInput);
 } else {
   process.stdin.on('data', handleInput);
   process.on('exit', () => {
