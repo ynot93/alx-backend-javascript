@@ -33,9 +33,9 @@ function countStudents(path) {
         console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
       }
 
-      resolve();
+      resolve({ totalStudents, students });
     });
   });
 }
 
-module.exports = { countStudents };
+module.exports = countStudents;
