@@ -1,12 +1,12 @@
 const express = require('express');
-const { countStudents } = require('./3-read_file_async');
+const countStudents = require('./3-read_file_async');
 
 const databaseFile = process.argv[2];
 
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello Holberton School!\n');
+  res.send('Hello Holberton School!');
 });
 
 app.get('/students', async (req, res) => {
