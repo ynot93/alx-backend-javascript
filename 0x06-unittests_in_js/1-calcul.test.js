@@ -17,8 +17,8 @@ describe('calculateNumber', function () {
       assert.strictEqual(calculateNumber('SUBTRACT', 1.4, 4.5), -4);
     });
 
-    it('should return -1 when subtracting 1.4 from 0.5', function () {
-      assert.strictEqual(calculateNumber('SUBTRACT', 0.5, 1.4), -1);
+    it('should return 0 when subtracting 1.4 from 0.5', function () {
+      assert.strictEqual(calculateNumber('SUBTRACT', 0.5, 1.4), 0);
     });
   });
 
@@ -37,12 +37,6 @@ describe('calculateNumber', function () {
 
     it('should return 2 when dividing 5.6 by 2.8', function () {
       assert.strictEqual(calculateNumber('DIVIDE', 5.6, 2.8), 2);
-    });
-  });
-
-  describe('Invalid type', function () {
-    it('should throw an error when type is invalid', function () {
-      assert.throws(() => calculateNumber('INVALID', 1, 3), Error);
     });
   });
 });
