@@ -21,7 +21,7 @@ describe('sendPaymentRequestToApi', function() {
   });
 
   it('should call Utils.calculateNumber with SUM, 10, 10 and output 20', function() {
-    sendPaymentRequestToApi(100, 20);
+    sendPaymentRequestToApi(10, 10);
     expect(spy.calledOnce).to.be.true;
     expect(spy.calledOnceWithExactly('The total is: 20')).to.be.true;
   });
