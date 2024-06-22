@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/students', async (req, res) => {
-  res.write('This is the list of our students\n')
+  res.write('This is the list of our students\n');
   try {
     const { totalStudents, students } = await countStudents(databaseFile);
 
@@ -22,7 +22,7 @@ app.get('/students', async (req, res) => {
 
     res.end();
   } catch (error) {
-      res.status(500).send(error.message);
+    res.end(error.message);
   }
 });
 
